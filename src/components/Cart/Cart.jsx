@@ -31,7 +31,11 @@ const Cart = ({
           {cart.line_items.map((item) => {
             return (
               <Grid item xs={12} sm={4} key={item.id}>
-                <CartItem item={item} handleRemoveFromCart={handleRemoveFromCart} handleUpdateCartQty={handleUpdateCartQty} />
+                <CartItem
+                  item={item}
+                  handleRemoveFromCart={handleRemoveFromCart}
+                  handleUpdateCartQty={handleUpdateCartQty}
+                />
               </Grid>
             );
           })}
@@ -52,6 +56,8 @@ const Cart = ({
               Empty Cart
             </Button>
             <Button
+              component={Link}
+              to="/checkout"
               className={classes.checkoutButton}
               size="large"
               type="button"
