@@ -34,7 +34,7 @@ const Navbar = ({ totalItem }) => {
               height="25px"
               className={classes.image}
             />
-            Commerce.js
+            Zupi Store
           </Typography>
           <div className={classes.grow} />
           <div className={classes.button}>
